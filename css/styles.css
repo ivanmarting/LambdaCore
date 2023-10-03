@@ -1,0 +1,610 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-size: 62.5%;
+}
+
+@font-face{
+    font-family: "GothamBook";
+    src: url(../assets/fonts/Gotham-Font/GothamBook.ttf);
+}
+
+@font-face{
+    font-family: "GothamBlack";
+    src: url(../assets/fonts/Gotham-Font/Gotham-Black.otf);
+
+}
+
+@font-face{
+    font-family: "GothamBold";
+    src: url(../assets/fonts/Gotham-Font/Gotham-Bold.otf);
+}
+
+@font-face{
+    font-family: "GothamLight";
+    src: url(../assets/fonts/Gotham-Font/Gotham-Light.otf);
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 5rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}     
+
+header nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 1rem 5rem 1rem 5rem;
+    color: white;
+    font-family: "GothamBook";
+    font-size: 1.5rem;
+    text-align: center;
+}    
+
+#nave{
+    background-color: rgb(15, 15, 15);
+    font-family: "GothamBold";
+    color: white;
+}
+
+#footer{
+    text-decoration: none;
+    background-color: #181818;
+    width: 100%;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+footer a svg{
+    color: white;
+}
+
+
+/* ------ 1st------ */
+
+.cajitasUno{
+    background-image: url(../assets/images/Starfield-Wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-color: red;
+    height: 450px;
+    margin: 10px 0 10px 0;
+    overflow: hidden;
+}
+.cajitasDos{
+    height: 225px;
+    margin: 20px 0 10px 0;
+}
+.popularesJuego{
+    font-family: "GothamBold";
+    color: orange;
+    font-size: 20px;
+    width: 300px;   
+    text-align: left;
+    margin: 35px 35px 0 0; 
+}
+.popularesTitulo{
+    font-family: "GothamBold";
+    color: white;
+    font-size: 40px;
+    max-width: 300px;
+    text-align: left;
+    margin: 0 35px 0 0;
+    line-height: 1.2;
+}
+.popularesContenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    overflow: hidden;
+    padding: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.062), rgb(15, 15, 15) 90%);
+}
+
+.popularesUno{
+    width: 415px;
+    height: 230px;
+    background-image: url(../assets/images/spiderman2-wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.popularesDos{
+    width: 415px;
+    height: 230px;
+    background-image: url(../assets/images/minecraft-wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.popularesTres{
+    width: 415px;
+    height: 230px;
+    background-image: url(../assets/images/steam-wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.popularesA{
+    font-family: "GothamBold";
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin: 140px 10px 0 10px;
+    padding: 0 3px 0 3px;
+    overflow: hidden;
+    max-width: fit-content;
+    background-color: orange;
+}
+.popularesB{
+    font-family: "GothamBold";
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 5px 10px 0 10px;
+    line-height: 1;
+    height: 80px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.062), rgb(15, 15, 15) 25%);
+}
+
+.tituloCarrousel{
+    font-family: "GothamBold";
+    color: orange;
+    font-size: 13px;
+
+}
+.descripcionCarrousel{
+    font-family: "GothamBold";
+    color: white;
+    font-size: 18px;
+}
+
+.carrouselMobile{
+    margin: 10px 0 0 0;
+}
+
+/* ------ 3th ------ */
+
+.recientesCont{
+    overflow: hidden;
+    padding: 0;
+
+}
+.contenedorItem{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 30px 0;
+}
+.contenedorTitle{
+    font-family: "GothamBold";
+    font-size: 20px;
+    color: orange;
+    margin: 0 0 0 9px;
+}
+.contenedorTxt{
+    font-family: "GothamBold";
+    font-size: 35px;
+    color: rgb(15, 15, 15);
+    line-height: 1.1;
+    margin: 0 0 0 9px;
+}
+.by{
+    font-family: "GothamLight";
+    font-size: 18px;
+    margin: 0 0 0 9px;
+}
+
+/* ------ ABOUT US ------ */
+
+.portadaContenedor{
+    padding: 0;
+    background-image: url(../assets/images/CustomWpp.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.elementosPortada{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.lambdaLogo{
+    width: 230px;
+    padding: 0;
+    margin: 100px 0 0 0;
+}
+.lambdaName{
+    font-family: "GothamBlack";
+    font-size: 70px;
+    color: white;
+    padding: 0;
+    margin: 0 0 0 0;
+    max-height: 70px;
+}
+.lambdaSub{
+    font-family: "GothamBook";
+    font-size: 30px;
+    color: white;
+    padding: 0;
+    margin: 0 0 100px 0;
+}
+
+/* ------ 2nd ------ */
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    margin: 50px 0 0 0;
+}
+.nosotrosInfo{
+    text-align: center;
+}
+.infoTitulo{
+    font-family: "GothamBold";
+    font-size: 55px;
+    color: orange;
+    margin: 0 0 30px 0; 
+}
+.infoArt{
+    font-family: "GothamBook";
+    font-size: 25px;
+    color: black;
+    text-align: justify;
+    line-height: 1.3;
+    margin: 0 0 100px 0;
+}
+
+.team{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.team2{
+    background-image: url(../assets/images/team3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60rem;
+    height: 32rem;
+    box-shadow: 0 10px 30px 10px;;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 70px;
+}
+.teamTxt{
+    font-family: "GothamBook";
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+.last{
+    font-family: "GothamBold";
+    font-size: 25px;
+    color: white;
+    background-color: orange;
+    width: fit-content; 
+    padding: 0px 3px 0px 3px ;
+    margin: 70px 0 30px 6px;
+}
+
+
+/* ------ CONTACTO ------ */
+
+.bodySoporte{
+    background-color: #161616;
+}
+.h1Sup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: "GothamBook";
+    font-size: 2rem;
+    top: 1rem;
+    color: white;
+}
+.formSup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0rem 4rem 0rem;
+
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2b2b2b;
+    color: white;
+    font-family: "GothamBook";
+    padding: 0.1rem 2rem 0.1rem 2rem;
+    font-size: 2.5rem;
+    width: 70rem;
+    border: 0px;
+}
+
+.formulario label{
+    margin: 1.2rem 0rem 0.2rem 0rem;
+    font-size: 2.3rem;
+}
+
+.formulario input{
+    border-radius: 0.3rem;
+    font-family: "GothamBook";
+    font-size: 2rem;
+    height: 2.5rem;
+    
+}
+#consulta2{
+    font-family: "GothamBook";
+    font-size: 1rem;
+}
+.submit{
+    margin: 1rem 0rem 1rem 0rem;
+    width: 22rem;
+    position: relative;
+    left: 22rem;
+    font-family: "GothamBook";
+}
+
+#Motivo{
+    height: 3rem;
+}
+
+#mainContacto{
+    background-image: url(../assets/images/orange.jpg);
+/*     background-color: rgb(216, 102, 19); */
+
+}
+
+.formularioC{
+    padding: 0 0 33.5rem 0;
+}
+
+/* -------- MEDIA QUERIES --------- */
+
+@media (min-width: 768px){
+    .carrouselMobile{
+        display: none;
+    }
+    .fix{
+        display: none;
+    }
+}
+
+@media (max-width: 1400px){
+    .popularesUno{
+        width: 355px;
+    }
+    .popularesDos{
+        width: 355px;
+    }
+    .popularesTres{
+        width: 355px;
+    }
+}
+
+@media (max-width: 1200px){
+    .popularesUno{
+        width: 300px;
+        height: 215px;
+    }
+    .popularesDos{
+        width: 300px;
+        height: 215px;
+    }
+    .popularesTres{
+        width: 300px;
+        height: 215px;
+    }
+}
+
+@media (max-width: 992px){
+    .cajitasUno{
+        height: 370px;
+    }
+    .popularesUno{
+        width: 220px;
+        height: 215px;
+    }
+    .popularesDos{
+        width: 220px;
+        height: 215px;
+    }
+    .popularesTres{
+        width: 220px;
+        height: 215px;
+    }
+    .popularesA{
+        font-size: 10px;
+    }
+    .popularesB{
+        font-size: 16px;
+    }
+    .contenedorImagen{
+        max-height: 250px;
+    }
+    .contenedorTitle{
+        font-size: 20px;
+    }
+    .contenedorTxt{
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 768px){
+    #nave{
+        display: none;
+    }
+
+    .recientesCont{
+        display: none;
+    }
+    .populares{
+        display: none;
+    }
+    .mainHome{
+        background-color: #161616;
+    }
+    .contenedorItem{
+        flex-direction: column;
+    }
+    .contenedorImagen{
+        max-height: 400px;
+    }
+    .contenedorTitle{
+        margin: 10px 0 0 0;
+        
+    }
+    .contenedorTxt{
+        color: white;
+        font-size: 34px;
+        margin: 0 0 0 0;
+    }
+    .by{
+        color: white;
+        font-size: 18px;
+        margin: 6px 0 0 0;
+    }
+
+
+    /* NOSOTROS */
+
+    .infoTitulo{
+        font-size: 30px;
+    }
+    .infoArt{
+        font-size: 18px;
+
+    }
+    .lambdaLogo{
+        width: 150px;
+        padding: 0;
+        margin: 70px 0 0 0;
+    }
+    .lambdaName{
+        font-size: 55px;
+        margin: 0 0 0 0;
+        max-height: 55px;
+    }
+    .lambdaSub{
+        font-size: 20px;
+        margin: 0 0 70px 0;
+    }
+    .team2{
+        width: 50rem;
+        height: 25rem;
+    }
+    .teamTxt{
+        font-size: 27px;
+    }
+
+}
+
+
+@media (max-width:576px){
+    .contenedorTxt{
+        font-size: 26px;
+    }
+    .lambdaLogo{
+        width: 110px;
+        padding: 0;
+        margin: 40px 0 0 0;
+    }
+    .lambdaName{
+        font-size: 35px;
+        margin: 0 0 0 0;
+        max-height: 55px;
+    }
+    .lambdaSub{
+        font-size: 10px;
+        margin: 0 0 40px 0;
+    }
+    .team2{
+        width: 31rem;
+        height: 15rem;
+    }
+    .teamTxt{
+        font-size: 19px;
+    }
+
+}
+
+@media (min-width:768px){
+    .recientesCont2{
+        display: none;
+    }
+    .navmobile{
+        display: none;
+    }
+    
+}
+
+.navmobile{
+    background-color: rgb(31, 31, 31);
+    padding: 0;
+    margin: 0;
+}
+.navMobileCont{
+    background-color: rgb(31, 31, 31);
+}
+.navbar-brand{
+    color: white;
+}
+.nav-link{
+    color: white;
+}
+.navbaricon{
+    width: 42px;
+}
+.burguer{
+    width: 42px;
+}
+/* .fixtxt{
+    font-family: "GothamBold";
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin: 85px 0 35px 8px;
+    background-color: rgb(216, 102, 19);
+    width: 230px;
+
+} */
