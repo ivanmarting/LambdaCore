@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT US</title>
+    <title>Reseñas</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -14,8 +14,8 @@
                 <img src="../assets/images/lambdaVECTOR3.png" alt="Logo" width="30">
             </a>
             <ul>
-                <li><a href="../pages/reseñas.html">RESEÑAS</a></li>
-                <li><a href="#">LAMBDA</a></li>
+                <li><a href="#">RESEÑAS</a></li>
+                <li><a href="../pages/nosotros.html">LAMBDA</a></li>
                 <li><a href="../pages/contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
@@ -28,10 +28,10 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="../pages/reseñas.html">RESEÑAS</a>
+                    <a class="nav-link" href="#">RESEÑAS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">LAMBDA</a>
+                    <a class="nav-link" href="../pages/nosotros.html">LAMBDA</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
@@ -41,25 +41,74 @@
             </div>
           </nav>
     </header>
-    <main id="mainLambda">
-        <div class="portadaContenedor container-fluid">
-            <section class="elementosPortada row col-12">
-                    <img class="lambdaLogo" src="../assets/images/lambdavector2.png" alt="Logo vectorizado de LambdaCore">
-                    <h1 class="lambdaName">LAMBDA CORE</h1>
-                    <p class="lambdaSub">COMUNICADOR GEEK</p>
-            </section>
+    </header>
+    <main>
+        <div class="searchbar container">
+            <input class="searchbar2 col-5" type="text" placeholder="Buscar...">
+            <button class="searchbarButton"><svg class="sbicon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></button>
         </div>
-        <div class="nosotros container-fluid">
-            <article class="nosotrosInfo row col-xl-8 col-lg-9 col-11">
-                <h3 class="infoTitulo"> ¿QUÉ ES LAMBDA CORE?</h3>
-                <P class="infoArt"> Es un medio de comunicación Gamer con modalidad de revista digital. Nuestro trabajo es encargarnos de que nuestro público objetivo esté siempre informado de todas las noticias dentro del mundo Gamer, con las noticias mas recientes e importantes, además de brindarte nuestra experiencia con los nuevos y mas populares lanzamientos dentro de la industria.</P>
-                <h2 class="infoTitulo"> ORIGEN </h2>
-                <p class="infoArt">El nombre de Lambda Core y su diseño/branding toma inspiración directa del mítico Half-Life de 1998, uno de los FPS pioneros de la industria. Nuestro medio de comunicación fue fundado en 2020 por un grupo de 7 integrantes residentes en Argentina.</p>
-            </article>
-        </div>
-        <div class="team">
-            <div class="team2">
-                <p class="teamTxt">CONOCE A NUESTRO EQUIPO</p>
+        <div class="recientesCont container">
+            <div class="filtros"> 
+                <h2 class="last">RESEÑAS</h2> 
+                <div class="filtros2">
+                    <label class="ordenar" for="Motivo">ORDENAR</label>
+                        <select class="opcion" name="Motivo" id="Motivo">
+                            <option value="trabajo">RECIENTES</option>
+                            <option value="Reclamo">MAS VISTAS</option>
+                            <option value="Colab">MAYOR CALIFICACIÓN</option>
+                            <option value="otro">MENOR CALIFICACIÓN</option>
+                        </select>
+                </div>
+            </div>
+            
+            <div class="contenedor2 container row">
+                <section class="contenedorItem">
+                    <img class="contenedorImagen col-lg-4 col-md-7 col-sm-12" src="../assets/images/separate-ways-wpp.jpg" alt="Wallpaper de Separate Ways">
+                    <div class="col-lg-6 col-md-5 col-sm-12">
+                        <h2 class="contenedorTitle">SEPARATE WAYS</h2>
+                        <p class="contenedorTxt2">UN DLC QUE ACTÚA COMO BROCHE DE ORO</p>
+                        <p class="descripcionR"> Después del éxito redondo con Resident Evil 4 Remake, Separate Ways perfecciona aún mas la entrega de Capcom. </p>
+                        <p class="by"> Escrito por fulanito el 01/02/23 </p>
+                    </div>
+                </section>
+                <section class="contenedorItem col-12">
+                    <img class="contenedorImagen col-lg-4 col-md-7" src="../assets/images/fifa23-wp.jpg" alt="Wallpaper de Fifa 23">
+                    <div class="col-lg-6 col-md-5 col-sm-12">
+                        <h2 class="contenedorTitle">EA SPORTS FC 24</h2>
+                        <p class="contenedorTxt2">NUEVA IMÁGEN, MISMO SABOR.</p>
+                        <p class="descripcionR"> Mas allá del cambio de nombre e identidad, nuestro descontento con la franquicia sigue creciendo. </p>
+                        <p class="by"> Escrito por fulanito el 01/02/23 </p>
+                    </div>   
+                </section>
+                <section class="contenedorItem col-12">
+                    <img class="contenedorImagen col-lg-4 col-md-7" src="../assets/images/Cs2-wpp.jpg" alt="Wallpaper de Counter-Strike 2">
+                    <div class="col-lg-6 col-md-5 col-sm-12">
+                        <h2 class="contenedorTitle">COUNTER-STRIKE 2</h2>
+                        <p class="contenedorTxt2">¿LA ACTUALIZACIÓN QUE NECESITABAMOS?</p>
+                        <p class="descripcionR"> Counter-Strike Globbal Offensive acaba de recibir su actualización a Source 2 y te contamos nuestras impresiones. </p>
+                        <p class="by"> Escrito por fulanito el 01/02/23 </p>
+                    </div>          
+                </section>
+                <section class="contenedorItem col-12">
+                    <img class="contenedorImagen col-lg-4 col-md-7" src="../assets/images/mortalkombat1-wpp.jpg" alt="Wallpaper de Mortal Kombat 1">
+                    <div class="col-lg-6 col-md-5 col-sm-12">
+                        <h2 class="contenedorTitle">MORTAL KOMBAT 1</h2>
+                        <p class="contenedorTxt2">REINICIO REFRESCANTE PARA LA SAGA</p>
+                        <p class="descripcionR"> Después de varias entregas y algunas opiniones divididas, Mortal Kombat decide reiniciarse nuevamente, y estamos conformes con los resultados. </p>
+                        <p class="by"> Escrito por fulanito el 01/02/23 </p>
+                    </div>          
+                </section>
+                <section class="contenedorItem col-12">
+                    <img class="contenedorImagen col-lg-4 col-md-7" src="../assets/images/PAYDAY3-WPP.jpg" alt="Wallpaper de Payday 3">
+                    <div class="col-lg-6 col-md-5 col-sm-12">
+                        <h2 class="contenedorTitle">PAYDAY 3</h2>
+                        <p class="contenedorTxt2">UN VERDADERO ROBO</p>
+                        <p class="descripcionR"> La saga sobre simulación de atracos mas popular de la industria vuelve con una esperadisima tercera entrega, que deja muchísimo que desear.</p>
+                        <p class="by"> Escrito por fulanito el 01/02/23 </p>
+                    </div>          
+                </section>
             </div>
         </div>
 
@@ -82,6 +131,6 @@
         </a>
     </footer>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
-
+    
 </body>
 </html>
