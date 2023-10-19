@@ -1,0 +1,154 @@
+
+
+%boxsizing1{
+    width: 415px;
+    height: 230px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.welcome{
+    font-family: "GothamBlack";
+    font-size: 45px;
+    color: white;
+    background-color: $naranja;
+    padding: 8px 0 8px 0;
+    letter-spacing: 20px;
+    text-align: center;
+
+}
+.populares{
+    .cajitasUno{
+        background-image: url(../assets/images/Starfield-Wallpaper.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 450px;
+        margin: 10px 0 10px 0;
+        overflow: hidden;
+    
+        .popularesContenedor{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            overflow: hidden;
+            padding: 0;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.062), rgb(15, 15, 15) 90%);
+            .popularesJuego{
+                font-family: "GothamBold";
+                color: $naranja;
+                font-size: 20px;
+                width: 300px;   
+                text-align: left;
+                margin: 35px 35px 0 0; 
+            }
+            .popularesTitulo{
+                font-family: "GothamBold";
+                color: white;
+                font-size: 40px;
+                max-width: 300px;
+                text-align: left;
+                margin: 0 35px 0 0;
+                line-height: 1.2;
+            }   
+        }
+    }
+    .cajitasDos{
+        height: 225px;
+        margin: 20px 0 10px 0;
+        .popularesUno{
+            @extend %boxsizing1;
+            background-image: url(../assets/images/spiderman2-wallpaper.jpg);
+            .popularesA{
+                @extend %popularesA;
+            }
+            .popularesB{
+                @extend %popularesB;    
+            }
+        }
+        .popularesDos{
+            @extend %boxsizing1;
+            background-image: url(../assets/images/minecraft-wallpaper.jpg);
+            .popularesA{
+                @extend %popularesA;
+            }
+            .popularesB{
+                @extend %popularesB;    
+            }
+        }
+        .popularesTres{
+            @extend %boxsizing1;
+            background-image: url(../assets/images/steam-wallpaper.jpg);
+            .popularesA{
+                @extend %popularesA;
+            }
+            .popularesB{
+                @extend %popularesB;    
+            }
+        }
+    }
+}
+
+
+.recientesCont{
+    overflow: hidden;
+    padding: 0;
+    .contenedorItem{
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 30px 0;
+        .contenedorTitle{
+            font-family: "GothamBold";
+            font-size: 20px;
+            color: $naranja;
+            margin: 0 0 0 9px;
+        }
+        .contenedorTxt{
+            font-family: "GothamBold";
+            font-size: 35px;
+            color: $negro;
+            line-height: 1.1;
+            margin: 0 0 0 9px;
+        }
+        .by{
+            font-family: "GothamLight";
+            font-size: 18px;
+            margin: 0 0 0 9px;
+        }
+    }
+}
+
+
+/* MOBILE SET */
+
+.recientesCont2{
+    overflow: hidden;
+    padding: 0;
+    .contenedorItem{
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 30px 0;
+        .contenedorTitle{
+            font-family: "GothamBold";
+            font-size: 20px;
+            color: $naranja;
+            margin: 0 0 0 9px;
+        }
+        .contenedorTxt{
+            font-family: "GothamBold";
+            font-size: 35px;
+            color: $negro;
+            line-height: 1.1;
+            margin: 0 0 0 9px;
+        }
+        .by{
+            font-family: "GothamLight";
+            font-size: 18px;
+            margin: 0 0 0 9px;
+        }
+    }
+}
+
+
+

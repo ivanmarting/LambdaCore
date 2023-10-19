@@ -3,25 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <meta name="description" content="Contactate con el equipo de LambdaCore mediante unos sencillos pasos." >
+    <title>LambdaCore | Contacto</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body id="#bodyContacto">
-    <header>
+    <header class="headermobile">
         <nav id="nave">
             <a href="../index.html">
                 <img src="../assets/images/lambdaVECTOR3.png" alt="Logo" width="30">
             </a>
             <ul>
-                <li><a href="../pages/reseñas.html">RESEÑAS</a></li>
+                <li><a href="#">RESEÑAS</a></li>
                 <li><a href="../pages/nosotros.html">LAMBDA</a></li>
-                <li><a href="#">CONTACTO</a></li>
+                <li><a href="../pages/contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
+        <nav class="navmobile navbar navbar-expand-lg bg-body-tertiary">
+            <div class="navMobileCont container-fluid">
+              <a class="navbar-brand" href="../index.html"><img class="navbaricon" src="../assets/images/lambdaVECTOR3.png" alt="lambdavector"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img class="burguer" src="../assets/images/burguer-menu-icon.png" alt="Menu-burguer-icon">
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">RESEÑAS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/nosotros.html">LAMBDA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main id="mainContacto">
         <section class="formularioC">
-            <h1 class="h1Sup">Formulario de contacto</h1>
+            <p class="pSup">Formulario de contacto</p>
             <form action="" class="formSup">
                 <fieldset class="formulario">
                     <label for="nombreApellido">Nombre y Apellido:</label>
@@ -33,8 +56,8 @@
                     <label for="Motivo">Seleccioná el motivo del contacto</label>
                     <select name="Motivo" id="Motivo">
                         <option value="trabajo">Puesto de trabajo</option>
-                        <option value="Reclamo">Reclamo de contenido</option>
-                        <option value="Colab">Colaboración/Sponsor</option>
+                        <option value="reclamo">Reclamo de contenido</option>
+                        <option value="colab">Colaboración/Sponsor</option>
                         <option value="otro">Otro</option>
                     </select>
                     <label for="comentarios">Adjuntá detalles de tu consulta</label>

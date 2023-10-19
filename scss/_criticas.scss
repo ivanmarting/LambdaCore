@@ -1,0 +1,70 @@
+$naranja: rgb(216, 102, 19);
+$secundario: rgb(15, 15, 15);
+
+.searchbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 30px 0 0 0;
+    .searchbar2{
+        font-family: "GothamBook";
+        font-size: 20px;
+        border-style: solid;
+        border-color: $naranja;
+    }
+    .searchbarButton{
+        border-style: solid;
+        border-color: $naranja;
+        background-color: $naranja;
+        width: 40px;
+    }
+}
+.criticasCont{
+    overflow: hidden;
+    padding: 0;
+    .filtros{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .filtros2{
+            margin: 70px 0 30px 6px;
+            font-size: 25px;
+            font-family: "GothamBold";
+            .opcion{
+                color: white;
+                background-color: $naranja;
+            }
+        }
+    }
+}
+.contenedorItem{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 30px 0;
+    .contenedorTitle{
+        font-family: "GothamBold";
+        font-size: 20px;
+        color: rgb(216, 102, 19);
+        margin: 0 0 0 9px;
+    }
+    .contenedorTxt2{
+        font-family: "GothamBold";
+        font-size: 30px;
+        color: rgb(15, 15, 15);
+        line-height: 1.1;
+        margin: 0 0 0 9px;
+    }
+    .descripcionR{
+        font-family: "GothamBook";
+        font-size: 20px;
+        color: rgb(15, 15, 15);
+        line-height: 1.1;
+        margin: 10px 0 20px 9px;
+    }
+    .by{
+        font-family: "GothamLight";
+        font-size: 18px;
+        margin: 0 0 0 9px;
+    }
+}

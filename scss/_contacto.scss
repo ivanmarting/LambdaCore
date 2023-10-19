@@ -1,0 +1,55 @@
+#mainContacto{
+    background-image: url(../assets/images/orange.jpg);
+    .formularioC{
+        padding: 0 0 33.5rem 0;
+        .pSup{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "GothamBook";
+            font-size: 2rem;
+            top: 1rem;
+            color: white;
+        }
+        .formSup{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 4rem 0rem 4rem 0rem;
+            .formulario{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-color: $negro;
+                color: white;
+                font-family: "GothamBook";
+                padding: 0.1rem 2rem 0.1rem 2rem;
+                font-size: 2.5rem;
+                width: 70rem;
+                border: 0px;
+                label{
+                    margin: 1.2rem 0rem 0.2rem 0rem;
+                    font-size: 2.3rem;
+                }
+                input{
+                    border-radius: 0.3rem;
+                    font-family: "GothamBook";
+                    font-size: 2rem;
+                    height: 2.5rem;
+                }
+                #motivo{
+                    height: 3rem;
+                }
+                #consulta2{
+                    font-family: "GothamBook";
+                    font-size: 1rem;
+                }
+                .submit{
+                    margin: 1rem 0rem 1rem 0rem;
+                    width: 22rem;
+                    font-family: "GothamBook";
+                }
+            }
+        }
+    }
+}

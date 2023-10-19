@@ -1,0 +1,307 @@
+@media (min-width: 768px){
+    .carrouselMobile{
+        display: none;
+    }
+    .fix{
+        display: none;
+    }
+    .recientesCont2{
+        display: none;
+    }
+    .navmobile{
+        display: none;
+    }
+    .contenedor3{
+        display: none;
+    }
+}
+
+@media (max-width: 1400px){
+    .populares{
+        .cajitasDos{
+            .popularesUno{
+                width: 355px;
+            }
+            .popularesDos{
+                width: 355px;
+            }
+            .popularesTres{
+                width: 355px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .populares{
+        .cajitasDos{
+            .popularesUno{
+                width: 300px;
+                height: 215px;
+            }
+            .popularesDos{
+                width: 300px;
+                height: 215px;
+            }
+            .popularesTres{
+                width: 300px;
+                height: 215px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .populares{
+        .cajitasUno{
+            height: 370px;
+        }
+        .cajitasDos{
+            .popularesUno{
+                width: 220px;
+                height: 215px;
+                .popularesA{
+                    font-size: 10px;
+                }
+                .popularesB{
+                    font-size: 16px;
+                }
+            }
+            .popularesDos{
+                width: 220px;
+                height: 215px;
+                .popularesA{
+                    font-size: 10px;
+                }
+                .popularesB{
+                    font-size: 16px;
+                }
+            }
+            .popularesTres{
+                width: 220px;
+                height: 215px;
+                .popularesA{
+                    font-size: 10px;
+                }
+                .popularesB{
+                    font-size: 16px;
+                }
+            }
+        }
+
+    }
+    .recientesCont{
+        .contenedor2{
+            .contenedorItem{
+                .contenedorImagen{
+                    max-height: 250px;
+                }
+                div{
+                    .contenedorTitle{
+                        font-size: 20px;
+                    }
+                    .contenedorTxt{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+.contenedorItem{
+    div{
+        .contenedorTxt2{
+            font-size: 23px;
+        }
+    }
+}
+
+/* FULL MOBILE */
+
+@media (max-width: 768px){
+    #nave{
+        display: none;
+    }
+
+/* INDEX MOBILE */
+    .recientesCont{
+        display: none;
+    }
+    .populares{
+        display: none;
+    }
+
+    .mainHome{
+        background-color: $negro;
+        .welcome{
+            font-size: 30px;
+            margin: 0 0 120px 0;
+        }
+        .carrouselMobile{
+            div{
+                div{
+                    div{
+                        div{
+                            .tituloCarrousel{
+                                font-family: "GothamBold";
+                                color: $naranja;
+                                font-size: 15px;
+                            }
+                            .descripcionCarrousel{
+                                font-family: "GothamBold";
+                                color: white;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .recientesCont2{
+            .contenedor2{
+                padding: 0 0 0 15px ;
+                .contenedorItem{
+                    flex-direction: column;
+                    .contenedorImagen{
+                        max-height: 400px;
+                    }
+                    div{
+                        .contenedorTitle{
+                            margin: 10px 0 0 0;
+                        }
+                        .contenedorTxt{
+                            color: white;
+                            font-size: 34px;
+                            margin: 0 0 0 0;
+                        }
+                        .by{
+                            color: white;
+                            font-size: 18px;
+                            margin: 6px 0 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+/* CRITICAS */
+
+.criticasCont{
+    display: none;
+}
+
+#maincriticas{
+    background-color: $negro;
+    .searchbar{
+        padding: 30px 0 30px 0;
+    }
+    .contenedor3{
+        padding: 0 0 0 15px ;
+        .contenedorItem{
+            flex-direction: column;
+            .contenedorImagen{
+                max-height: 400px;
+            }
+            div{
+                .contenedorTitle{
+                    margin: 10px 0 0 0;
+                }
+                .contenedorTxt2{
+                    font-size: 28px;
+                    color: white;
+                    margin: 5px 0 10px 0;
+                }
+                .descripcionR{
+                    font-size: 23px;
+                    color: white;
+                    margin: 0 0 0 0;
+                }
+                .by{
+                    color: white;
+                    font-size: 18px;
+                    margin: 6px 0 0 0;
+                }   
+            }
+        }
+    }
+}
+
+/* NOSOTROS */
+
+#mainLambda{
+    .portadaContenedor{
+        .elementosPortada{
+            .lambdaLogo{
+                width: 150px;
+                padding: 0;
+                margin: 70px 0 0 0;
+            }
+            .lambdaName{
+                font-size: 55px;
+                margin: 0;
+                max-height: 55px;
+            }
+            .lambdaSub{
+                font-size: 20px;
+                margin: 0 0 70px 0;
+            }
+        }
+    }
+    .nosotros{
+        .nosotrosInfo{
+            .infoTitulo{
+                font-size: 30px;
+            }
+            .infoArt{
+                font-size: 18px;
+            }
+        }
+    }
+    .team{
+        .team2{
+            width: 50rem;
+            height: 25rem;
+            .teamTxt{
+                font-size: 27px;
+            }
+        }
+    }
+}
+}
+
+@media (max-width:576px){
+
+    #mainLambda{
+        .portadaContenedor{
+            .elementosPortada{
+                .lambdaLogo{
+                    width: 110px;
+                    padding: 0;
+                    margin: 40px 0 0 0;
+                }
+                .lambdaName{
+                    font-size: 35px;
+                    margin: 0;
+                    max-height: 55px;
+                }
+                .lambdaSub{
+                    font-size: 10px;
+                    margin: 0 0 40px 0;
+                }
+            }
+        }
+        .team{
+            .team2{
+                width: 31rem;
+                height: 15rem;
+                .teamTxt{
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+
+    
+}
+
