@@ -1,32 +1,28 @@
 
-
-%boxsizing1{
-    width: 415px;
-    height: 230px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-}
 .welcome{
     font-family: "GothamBlack";
     font-size: 45px;
     color: white;
     background-color: $naranja;
     padding: 8px 0 8px 0;
-    letter-spacing: 20px;
+    letter-spacing: 50px;
     text-align: center;
+    animation: slide-name 2s ease;
 
 }
 .populares{
     .cajitasUno{
-        background-image: url(../assets/images/Starfield-Wallpaper.jpg);
+        background-image: url(../assets/images/dolar-steam.jpeg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         height: 450px;
         margin: 10px 0 10px 0;
         overflow: hidden;
+        transition: height 1s, width 0.5s;
+        &:hover{ 
+            height: 550px;            
+        }
     
         .popularesContenedor{
             display: flex;
@@ -41,7 +37,7 @@
                 font-size: 20px;
                 width: 300px;   
                 text-align: left;
-                margin: 35px 35px 0 0; 
+                margin: 35px 35px 0 0;
             }
             .popularesTitulo{
                 font-family: "GothamBold";
@@ -79,7 +75,7 @@
         }
         .popularesTres{
             @extend %boxsizing1;
-            background-image: url(../assets/images/steam-wallpaper.jpg);
+            background-image: url(../assets/images/starfield-wallpaper-3.jpg);
             .popularesA{
                 @extend %popularesA;
             }
@@ -149,6 +145,8 @@
         }
     }
 }
+
+
 
 
 

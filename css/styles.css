@@ -1,3 +1,44 @@
+.populares .cajitasDos .popularesTres .popularesA, .populares .cajitasDos .popularesDos .popularesA, .populares .cajitasDos .popularesUno .popularesA {
+  font-family: "GothamBold";
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin: 140px 10px 0 10px;
+  padding: 0 3px 0 3px;
+  overflow: hidden;
+  max-width: fit-content;
+  background-color: rgb(216, 102, 19);
+}
+
+.populares .cajitasDos .popularesTres .popularesB, .populares .cajitasDos .popularesDos .popularesB, .populares .cajitasDos .popularesUno .popularesB {
+  font-family: "GothamBold";
+  font-size: 23px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  padding: 5px 10px 0 10px;
+  line-height: 1;
+  height: 80px;
+  overflow: hidden;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.062), rgb(15, 15, 15) 25%);
+}
+
+.populares .cajitasDos .popularesTres, .populares .cajitasDos .popularesDos, .populares .cajitasDos .popularesUno {
+  width: 415px;
+  height: 230px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+@keyframes slide-name {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 html {
   font-size: 62.5%;
 }
@@ -18,6 +59,20 @@ html {
   font-family: "GothamLight";
   src: url(../assets/fonts/Gotham-Font/Gotham-Light.otf);
 }
+.last {
+  font-family: "GothamBold";
+  font-size: 25px;
+  color: white;
+  background-color: rgb(216, 102, 19);
+  width: fit-content;
+  padding: 0px 3px 0px 3px;
+  margin: 70px 0 30px 6px;
+}
+
+a {
+  text-decoration: none;
+}
+
 header nav {
   display: flex;
   flex-direction: row;
@@ -45,35 +100,6 @@ header nav ul li a:hover {
   color: rgb(216, 102, 19);
 }
 
-footer {
-  overflow: hidden;
-  text-decoration: none;
-  background-color: #181818;
-  width: 100%;
-  height: 5em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-footer a:hover {
-  color: rgb(216, 102, 19);
-}
-footer a svg {
-  color: white;
-}
-
-.last {
-  font-family: "GothamBold";
-  font-size: 25px;
-  color: white;
-  background-color: rgb(216, 102, 19);
-  width: fit-content;
-  padding: 0px 3px 0px 3px;
-  margin: 70px 0 30px 6px;
-}
-
-/* MOBILE */
 .navmobile {
   background-color: rgb(31, 31, 31);
   padding: 0;
@@ -100,33 +126,29 @@ footer a svg {
   width: 42px;
 }
 
-.populares .cajitasDos .popularesTres, .populares .cajitasDos .popularesDos, .populares .cajitasDos .popularesUno {
-  width: 415px;
-  height: 230px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
 .welcome {
   font-family: "GothamBlack";
   font-size: 45px;
   color: white;
   background-color: rgb(216, 102, 19);
   padding: 8px 0 8px 0;
-  letter-spacing: 20px;
+  letter-spacing: 50px;
   text-align: center;
+  animation: slide-name 2s ease;
 }
 
 .populares .cajitasUno {
-  background-image: url(../assets/images/Starfield-Wallpaper.jpg);
+  background-image: url(../assets/images/dolar-steam.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 450px;
   margin: 10px 0 10px 0;
   overflow: hidden;
+  transition: height 1s, width 0.5s;
+}
+.populares .cajitasUno:hover {
+  height: 550px;
 }
 .populares .cajitasUno .popularesContenedor {
   display: flex;
@@ -164,7 +186,7 @@ footer a svg {
   background-image: url(../assets/images/minecraft-wallpaper.jpg);
 }
 .populares .cajitasDos .popularesTres {
-  background-image: url(../assets/images/steam-wallpaper.jpg);
+  background-image: url(../assets/images/starfield-wallpaper-3.jpg);
 }
 .recientesCont {
   overflow: hidden;
@@ -223,28 +245,291 @@ footer a svg {
   margin: 0 0 0 9px;
 }
 
-.populares .cajitasDos .popularesUno .popularesA, .populares .cajitasDos .popularesDos .popularesA, .populares .cajitasDos .popularesTres .popularesA {
-  font-family: "GothamBold";
-  font-size: 15px;
-  color: rgb(255, 255, 255);
-  text-align: left;
-  margin: 140px 10px 0 10px;
-  padding: 0 3px 0 3px;
+.portadaContenedor {
+  padding: 0;
+  background-image: url(../assets/images/CustomWpp.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.portadaContenedor .elementosPortada {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+.portadaContenedor .elementosPortada .lambdaLogo {
+  width: 230px;
+  padding: 0;
+  margin: 100px 0 0 0;
+}
+.portadaContenedor .elementosPortada .lambdaName {
+  font-family: "GothamBlack";
+  font-size: 70px;
+  color: white;
+  padding: 0;
+  margin: 0 0 0 0;
+  max-height: 70px;
+}
+.portadaContenedor .elementosPortada .lambdaSub {
+  font-family: "GothamBook";
+  font-size: 30px;
+  color: white;
+  padding: 0;
+  margin: 0 0 100px 0;
+}
+
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   overflow: hidden;
-  max-width: fit-content;
+  margin: 50px 0 0 0;
+}
+.nosotros .nosotrosInfo {
+  text-align: center;
+}
+.nosotros .nosotrosInfo .infoTitulo {
+  font-family: "GothamBold";
+  font-size: 55px;
+  color: rgb(216, 102, 19);
+  margin: 0 0 30px 0;
+}
+.nosotros .nosotrosInfo .infoArt {
+  font-family: "GothamBook";
+  font-size: 25px;
+  color: rgb(15, 15, 15);
+  text-align: justify;
+  line-height: 1.3;
+  margin: 0 0 100px 0;
+}
+
+.team {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  animation-duration: 2s;
+  animation-name: slide;
+  animation-iteration-count: infinite;
+}
+@keyframes slide {
+  from {
+    transform: translateZ(50vw);
+  }
+  to {
+    transform: translateZ(0);
+  }
+}
+.team .team2 {
+  background-image: url(../assets/images/team3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 60rem;
+  height: 32rem;
+  box-shadow: 0 10px 30px 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 70px;
+}
+.team .team2 .teamTxt {
+  font-family: "GothamBook";
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.searchbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 30px 0 0 0;
+}
+.searchbar .searchbar2 {
+  font-family: "GothamBook";
+  font-size: 20px;
+  border-style: solid;
+  border-color: rgb(216, 102, 19);
+}
+.searchbar .searchbarButton {
+  border-style: solid;
+  border-color: rgb(216, 102, 19);
+  background-color: rgb(216, 102, 19);
+  width: 40px;
+}
+
+.criticasCont {
+  overflow: hidden;
+  padding: 0;
+}
+.criticasCont .filtros {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.criticasCont .filtros .filtros2 {
+  margin: 70px 0 30px 6px;
+  font-size: 25px;
+  font-family: "GothamBold";
+}
+.criticasCont .filtros .filtros2 .opcion {
+  color: white;
   background-color: rgb(216, 102, 19);
 }
 
-.populares .cajitasDos .popularesUno .popularesB, .populares .cajitasDos .popularesDos .popularesB, .populares .cajitasDos .popularesTres .popularesB {
+.contenedorItem {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 0px 30px 0;
+  transition: border-width 0.2s;
+}
+.contenedorItem:hover {
+  border-style: solid;
+  border-color: rgb(216, 102, 19);
+  border-width: 4px;
+  border-radius: 7px;
+}
+.contenedorItem .contenedorTitle {
   font-family: "GothamBold";
-  font-size: 23px;
-  color: rgb(255, 255, 255);
-  text-align: left;
-  padding: 5px 10px 0 10px;
-  line-height: 1;
-  height: 80px;
+  font-size: 20px;
+  color: rgb(216, 102, 19);
+  margin: 0 0 0 9px;
+}
+.contenedorItem .contenedorTxt2 {
+  font-family: "GothamBold";
+  font-size: 30px;
+  color: rgb(15, 15, 15);
+  line-height: 1.1;
+  margin: 0 0 0 9px;
+}
+.contenedorItem .descripcionR {
+  font-family: "GothamBook";
+  font-size: 20px;
+  color: rgb(15, 15, 15);
+  line-height: 1.1;
+  margin: 10px 0 20px 9px;
+}
+.contenedorItem .by {
+  font-family: "GothamLight";
+  font-size: 18px;
+  margin: 0 0 0 9px;
+}
+
+#mainContacto {
+  background-image: url(../assets/images/orange.jpg);
+}
+#mainContacto .formularioC {
+  padding: 0 0 33.5rem 0;
+}
+#mainContacto .formularioC .pSup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "GothamBook";
+  font-size: 2rem;
+  top: 1rem;
+  color: white;
+}
+#mainContacto .formularioC .formSup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0rem 4rem 0rem;
+}
+#mainContacto .formularioC .formSup .formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  font-family: "GothamBook";
+  padding: 0.1rem 2rem 0.1rem 2rem;
+  font-size: 2.5rem;
+  width: 70rem;
+  border: 0px;
+}
+#mainContacto .formularioC .formSup .formulario label {
+  margin: 1.2rem 0rem 0.2rem 0rem;
+  font-size: 2.3rem;
+}
+#mainContacto .formularioC .formSup .formulario input {
+  border-radius: 0.3rem;
+  font-family: "GothamBook";
+  font-size: 2rem;
+  height: 2.5rem;
+}
+#mainContacto .formularioC .formSup .formulario #motivo {
+  height: 3rem;
+}
+#mainContacto .formularioC .formSup .formulario #consulta2 {
+  font-family: "GothamBook";
+  font-size: 1rem;
+}
+#mainContacto .formularioC .formSup .formulario .submit {
+  margin: 1rem 0rem 1rem 0rem;
+  width: 22rem;
+  font-family: "GothamBook";
+}
+
+div {
   overflow: hidden;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.062), rgb(15, 15, 15) 25%);
+  padding: 0%;
+}
+div .articuloPortada {
+  margin: 50px 0 0 0;
+}
+div .articuloPortada p {
+  font-family: "GothamBold";
+  font-size: 40px;
+  color: rgb(15, 15, 15);
+  border-style: solid 10px;
+  border-color: white;
+}
+div .articuloPortada .articuloImagen {
+  background-image: url(../assets/images/dolar-steam.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+div .articuloContenido p {
+  font-family: "GothamBook";
+  font-size: 23px;
+  color: rgb(15, 15, 15);
+  margin: 30px 0 30px 0;
+  line-height: 1.3;
+  padding: 0;
+}
+div .articuloContenido .articuloSubtitulo {
+  background-color: rgb(216, 102, 19);
+  font-family: "GothamBold";
+  font-size: 28px;
+  color: white;
+  max-width: fit-content;
+  padding: 0;
+}
+
+footer {
+  overflow: hidden;
+  text-decoration: none;
+  background-color: #181818;
+  width: 100%;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+footer a:hover {
+  color: rgb(216, 102, 19);
+}
+footer a svg {
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -261,6 +546,9 @@ footer a svg {
     display: none;
   }
   .contenedor3 {
+    display: none;
+  }
+  .mobileArticle {
     display: none;
   }
 }
@@ -365,6 +653,7 @@ footer a svg {
     font-family: "GothamBold";
     color: white;
     font-size: 20px;
+    background-color: rgb(15, 15, 15);
   }
   .mainHome .recientesCont2 .contenedor2 {
     padding: 0 0 0 15px;
@@ -453,6 +742,26 @@ footer a svg {
   #mainLambda .team .team2 .teamTxt {
     font-size: 27px;
   }
+  /* ARTICLE */
+  #mainArticle {
+    background-color: rgb(15, 15, 15);
+  }
+  #mainArticle .desktopArticle {
+    display: none;
+  }
+  #mainArticle .mobileArticle .articuloPortada p {
+    font-size: 30px;
+    color: white;
+  }
+  #mainArticle .mobileArticle .articuloPortada .articuloImagen {
+    height: 300px;
+  }
+  #mainArticle .mobileArticle .articuloContenido p {
+    font-size: 20px;
+    text-align: justify;
+    margin: 50px 5px 0 0;
+    color: white;
+  }
 }
 @media (max-width: 576px) {
   #mainLambda .portadaContenedor .elementosPortada .lambdaLogo {
@@ -476,218 +785,6 @@ footer a svg {
   #mainLambda .team .team2 .teamTxt {
     font-size: 19px;
   }
-}
-.portadaContenedor {
-  padding: 0;
-  background-image: url(../assets/images/CustomWpp.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.portadaContenedor .elementosPortada {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  text-align: center;
-}
-.portadaContenedor .elementosPortada .lambdaLogo {
-  width: 230px;
-  padding: 0;
-  margin: 100px 0 0 0;
-}
-.portadaContenedor .elementosPortada .lambdaName {
-  font-family: "GothamBlack";
-  font-size: 70px;
-  color: white;
-  padding: 0;
-  margin: 0 0 0 0;
-  max-height: 70px;
-}
-.portadaContenedor .elementosPortada .lambdaSub {
-  font-family: "GothamBook";
-  font-size: 30px;
-  color: white;
-  padding: 0;
-  margin: 0 0 100px 0;
-}
-
-.nosotros {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-  margin: 50px 0 0 0;
-}
-.nosotros .nosotrosInfo {
-  text-align: center;
-}
-.nosotros .nosotrosInfo .infoTitulo {
-  font-family: "GothamBold";
-  font-size: 55px;
-  color: rgb(216, 102, 19);
-  margin: 0 0 30px 0;
-}
-.nosotros .nosotrosInfo .infoArt {
-  font-family: "GothamBook";
-  font-size: 25px;
-  color: rgb(15, 15, 15);
-  text-align: justify;
-  line-height: 1.3;
-  margin: 0 0 100px 0;
-}
-
-.team {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.team .team2 {
-  background-image: url(../assets/images/team3.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 60rem;
-  height: 32rem;
-  box-shadow: 0 10px 30px 10px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 0 70px;
-}
-.team .team2 .teamTxt {
-  font-family: "GothamBook";
-  font-size: 35px;
-  color: white;
-  text-align: center;
-  margin: 0;
-}
-
-.searchbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  padding: 30px 0 0 0;
-}
-.searchbar .searchbar2 {
-  font-family: "GothamBook";
-  font-size: 20px;
-  border-style: solid;
-  border-color: rgb(216, 102, 19);
-}
-.searchbar .searchbarButton {
-  border-style: solid;
-  border-color: rgb(216, 102, 19);
-  background-color: rgb(216, 102, 19);
-  width: 40px;
-}
-
-.criticasCont {
-  overflow: hidden;
-  padding: 0;
-}
-.criticasCont .filtros {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.criticasCont .filtros .filtros2 {
-  margin: 70px 0 30px 6px;
-  font-size: 25px;
-  font-family: "GothamBold";
-}
-.criticasCont .filtros .filtros2 .opcion {
-  color: white;
-  background-color: rgb(216, 102, 19);
-}
-
-.contenedorItem {
-  display: flex;
-  flex-direction: row;
-  margin: 0px 0px 30px 0;
-}
-.contenedorItem .contenedorTitle {
-  font-family: "GothamBold";
-  font-size: 20px;
-  color: rgb(216, 102, 19);
-  margin: 0 0 0 9px;
-}
-.contenedorItem .contenedorTxt2 {
-  font-family: "GothamBold";
-  font-size: 30px;
-  color: rgb(15, 15, 15);
-  line-height: 1.1;
-  margin: 0 0 0 9px;
-}
-.contenedorItem .descripcionR {
-  font-family: "GothamBook";
-  font-size: 20px;
-  color: rgb(15, 15, 15);
-  line-height: 1.1;
-  margin: 10px 0 20px 9px;
-}
-.contenedorItem .by {
-  font-family: "GothamLight";
-  font-size: 18px;
-  margin: 0 0 0 9px;
-}
-
-#mainContacto {
-  background-image: url(../assets/images/orange.jpg);
-}
-#mainContacto .formularioC {
-  padding: 0 0 33.5rem 0;
-}
-#mainContacto .formularioC .pSup {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "GothamBook";
-  font-size: 2rem;
-  top: 1rem;
-  color: white;
-}
-#mainContacto .formularioC .formSup {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 4rem 0rem 4rem 0rem;
-}
-#mainContacto .formularioC .formSup .formulario {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: rgb(15, 15, 15);
-  color: white;
-  font-family: "GothamBook";
-  padding: 0.1rem 2rem 0.1rem 2rem;
-  font-size: 2.5rem;
-  width: 70rem;
-  border: 0px;
-}
-#mainContacto .formularioC .formSup .formulario label {
-  margin: 1.2rem 0rem 0.2rem 0rem;
-  font-size: 2.3rem;
-}
-#mainContacto .formularioC .formSup .formulario input {
-  border-radius: 0.3rem;
-  font-family: "GothamBook";
-  font-size: 2rem;
-  height: 2.5rem;
-}
-#mainContacto .formularioC .formSup .formulario #motivo {
-  height: 3rem;
-}
-#mainContacto .formularioC .formSup .formulario #consulta2 {
-  font-family: "GothamBook";
-  font-size: 1rem;
-}
-#mainContacto .formularioC .formSup .formulario .submit {
-  margin: 1rem 0rem 1rem 0rem;
-  width: 22rem;
-  font-family: "GothamBook";
 }
 
 /*# sourceMappingURL=styles.css.map */

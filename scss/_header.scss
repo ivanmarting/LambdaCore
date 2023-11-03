@@ -1,0 +1,51 @@
+header{
+    nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        height: 5rem;
+        background-color: $negro;
+
+        ul li{
+            list-style-type: none;
+            display: inline-block;
+            margin: 1rem 5rem 1rem 5rem;
+            color: white;
+            font-family: "GothamBook";
+            font-size: 15px;
+            text-align: center;
+            
+            a{
+                text-decoration: none;
+                color: white;
+                &:hover{
+                    color: $naranja;
+                }
+
+            }
+        }
+    }
+}
+.navmobile{
+    background-color: rgb(31, 31, 31);
+    padding: 0;
+    margin: 0;
+}
+.navMobileCont{
+    background-color: rgb(31, 31, 31);
+}
+.navbar-brand{
+    color: white;
+}
+.nav-link{
+    color: white;
+}
+.navbaricon{
+    width: 42px;
+}
+.burguer{
+    width: 42px;
+}
